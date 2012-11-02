@@ -1,0 +1,5 @@
+plack-middleware-logany (0.001-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Michael Alan Dorman <mdorman@ironicdesign.com>  Fri, 2 Nov 2012 11:42:00 -0400

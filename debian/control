@@ -1,0 +1,25 @@
+Source: plack-middleware-logany
+Section: perl
+Priority: optional
+Maintainer: Michael Alan Dorman <mdorman@ironicdesign.com>
+Build-Depends: debhelper (>= 8)
+Build-Depends-Indep: libhttp-message-perl,
+ liblog-any-perl,
+ libplack-perl,
+ libtry-tiny-perl,
+ perl
+Standards-Version: 3.9.3
+Homepage: http://search.cpan.org/dist/Plack-Middleware-LogAny/
+
+Package: libplack-middleware-logany-perl
+Architecture: all
+Depends: ${misc:Depends}, ${perl:Depends},
+ liblog-any-perl,
+ libplack-perl
+Description: Use Log::Any to handle logging from your Plack app
+ LogAny is a Plack::Middleware component that allows you to use Log::Any to
+ handle the logging object, psgix.logger.
+ .
+ It really tries to be the thinnest possible shim, so it doesn't handle any
+ configuration beyond setting the category to which messages from plack might
+ be logged.
